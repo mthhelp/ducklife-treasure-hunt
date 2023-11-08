@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://gamefilez.mofunzone.com/gamefilez/duck-life-games/ducklifetreasurehunt/index.html -->
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <title>Unity WebGL Player | Duck Life Treasure Hunt</title>
+</head>
+<style>
+  body {
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #unity-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    background: rgb(35, 31, 32);
+    cursor: default;
+    max-height: 100vh;
+  }
+</style>
+
+<body>
+ <canvas id="unity-canvas" style="" width="960" height="540"></canvas>
+  <script src="./index_files/DLTH WebGL.loader.js.download"></script>
+  <script>
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build/DLTH WebGL.data",
+      frameworkUrl: "Build/DLTH WebGL.framework.js",
+      codeUrl: "Build/DLTH WebGL.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "Mofunzone.com",
+      productName: "Duck Life Treasure Hunt",
+      productVersion: "4.00300",
+    });
+  </script>
+  <script src="./index_files/DLTH WebGL.framework.js.download"></script>
+
+
+</body>
+
+</html>
